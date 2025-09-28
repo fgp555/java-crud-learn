@@ -1,0 +1,36 @@
+### Listar todos los ToDos
+GET http://localhost:8080/api/todos
+Accept: application/json
+
+###
+
+### Obtener un ToDo por ID
+GET http://localhost:8080/api/todos/1
+Accept: application/json
+
+###
+
+### Crear un nuevo ToDo
+POST http://localhost:8080/api/todos
+Content-Type: application/json
+
+{
+  "title": "Aprender Java",
+  "completed": false
+}
+
+###
+
+### Actualizar un ToDo existente
+PUT http://localhost:8080/api/todos/1
+Content-Type: application/json
+
+{
+  "title": "Aprender Spring Boot",
+  "completed": true
+}
+
+###
+
+### Eliminar un ToDo
+DELETE http://localhost:8080/api/todos/1
