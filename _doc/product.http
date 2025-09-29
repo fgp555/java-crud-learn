@@ -1,0 +1,29 @@
+### POST
+POST http://localhost:8080/api/product/create
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "Samsung",
+  "price": 1000
+}
+
+
+### GET
+GET http://127.0.0.1:8080/api/product/getAll
+
+### GET
+GET http://127.0.0.1:8080/api/product/getById/1
+
+### PUT
+PUT http://localhost:8080/api/product/update/1
+Content-Type: application/json
+
+{
+  "name": "Iphone Pro",
+  "price": 1000
+}
+
+
+### DELETE
+DELETE http://127.0.0.1:8080/api/product/delete/1

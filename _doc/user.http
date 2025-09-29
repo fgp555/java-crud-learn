@@ -1,0 +1,27 @@
+###
+GET http://localhost:8080/api/user/getAll
+
+###
+GET http://localhost:8080/api/user/getById/1
+
+###
+POST http://localhost:8080/api/user/create
+Content-Type: application/json
+
+{
+  "id": 3,
+  "name": "Pedro",
+  "email": "pedro@gmail.com"
+}
+
+###
+PUT http://localhost:8080/api/user/update/1
+Content-Type: application/json
+
+{
+  "name": "Juan",
+  "email": "juan@gmail.com"
+}
+
+###
+DELETE http://localhost:8080/api/user/delete/1
